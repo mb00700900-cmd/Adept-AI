@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 18% 98%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 217 91% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 92%;
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 270 95% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 100% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 62%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 217 91% 55%;
+
+    --radius: 0.5rem;
+
+    /* AI vs User Edit Colors */
+    --ai-badge: 270 95% 65%;
+    --ai-badge-foreground: 0 0% 100%;
+    --user-badge: 38 100% 55%;
+    --user-badge-foreground: 0 0% 100%;
+
+    /* Status Colors */
+    --status-todo: 220 15% 93%;
+    --status-todo-foreground: 220 20% 25%;
+    --status-in-progress: 217 91% 55%;
+    --status-in-progress-foreground: 0 0% 100%;
+    --status-done: 142 76% 45%;
+    --status-done-foreground: 0 0% 100%;
+
+    /* Priority Colors */
+    --priority-high: 0 84% 62%;
+    --priority-high-foreground: 0 0% 100%;
+    --priority-medium: 38 100% 55%;
+    --priority-medium-foreground: 0 0% 100%;
+    --priority-low: 142 76% 45%;
+    --priority-low-foreground: 0 0% 100%;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 22% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 22% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 22% 15%;
+    --secondary-foreground: 217 91% 75%;
+
+    --muted: 220 22% 15%;
+    --muted-foreground: 215 25% 70%;
+
+    --accent: 270 95% 68%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 100% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 62%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 22% 22%;
+    --input: 220 22% 22%;
+    --ring: 217 91% 60%;
+
+    /* AI vs User Edit Colors */
+    --ai-badge: 270 95% 68%;
+    --ai-badge-foreground: 0 0% 100%;
+    --user-badge: 38 100% 55%;
+    --user-badge-foreground: 0 0% 100%;
+
+    /* Status Colors */
+    --status-todo: 220 22% 15%;
+    --status-todo-foreground: 215 25% 70%;
+    --status-in-progress: 217 91% 60%;
+    --status-in-progress-foreground: 0 0% 100%;
+    --status-done: 142 76% 45%;
+    --status-done-foreground: 0 0% 100%;
+
+    /* Priority Colors */
+    --priority-high: 0 84% 62%;
+    --priority-high-foreground: 0 0% 100%;
+    --priority-medium: 38 100% 55%;
+    --priority-medium-foreground: 0 0% 100%;
+    --priority-low: 142 76% 45%;
+    --priority-low-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
